@@ -3,6 +3,10 @@ import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
 import Features from "./components/Features";
 import {css} from "styled-components";
+import Service from "./components/Service";
+import Price from "./components/Price";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const Container = styled.div`
     height: 100vh;
@@ -29,6 +33,18 @@ const FeatureShape = styled.div`
   background-color: #f21642;
 `
 
+const ServiceShape = styled.div`
+  ${Shape}
+  clip-path: polygon(0 0, 35% 0, 35% 100%, 0% 100%);
+  background-color: #fed819;
+`
+
+const PriceShape = styled.div`
+  ${Shape}
+  clip-path: polygon(35% 0, 100% 0, 100% 100%, 65% 100%);
+  background-color: #f21642;
+`
+
 const App = () =>{
   return (
     <>
@@ -40,6 +56,18 @@ const App = () =>{
       <Container>
         <Features></Features>
         <FeatureShape></FeatureShape>
+      </Container>
+      <Container>
+        <Service/>
+        <ServiceShape></ServiceShape>
+      </Container>
+      <Container>
+        <Price/>
+        <PriceShape></PriceShape>
+      </Container>
+      <Container>
+        <Contact/>
+        <Footer/>
       </Container>
     </>
   );
