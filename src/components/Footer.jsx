@@ -9,6 +9,10 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     padding:20px;
+
+    @media only screen and (max-width: 480px){
+        padding: 10px;
+    }
 `
 const List = styled.ul`
     list-style: none;
@@ -16,9 +20,16 @@ const List = styled.ul`
 `
 const ListItem = styled.li`
     margin-right: 20px;
+
+    @media only screen and (max-width: 480px){
+        font-size: 10px;
+    }
 `
 const CopyRight = styled.span`
     font-size: 16px;
+    @media only screen and (max-width: 480px){
+        font-size: 10px;
+    }
 `
 
 
@@ -32,7 +43,7 @@ const Footer = () => {
                 <ListItem>Contact</ListItem>
                 <ListItem>About me</ListItem>
             </List>
-            <CopyRight>Credit to Lama Tutorial. Maryam Developer Ⓒ</CopyRight>
+            <CopyRight>Credit to Lama Tutorial. Developed by Maryam Developer Ⓒ</CopyRight>
         </Wrapper>
     </Container>
   )

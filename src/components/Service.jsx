@@ -7,10 +7,18 @@ import Play from '../img/play.png'
 
 const Container = styled.div`
     display: flex;
+    @media only screen and (max-width: 480px){
+        flex-direction: column;
+        background-color: #ecebeb;
+    }
 `
 const Left = styled.div`
     width: 50%;
     position: relative;
+
+    @media only screen and (max-width: 480px){
+        display: none;
+    }
 `
 const Image = styled.img`
     width: 100%;
@@ -28,6 +36,9 @@ const Video = styled.video`
 const Rigth = styled.div`
     width: 50%;
     padding: 20px;
+    @media only screen and (max-width: 480px){
+        width: 100%;
+    }
 `
 
 const Wrapper = styled.div`
@@ -35,6 +46,10 @@ const Wrapper = styled.div`
     flex-direction: column;
     padding: 25px;
     margin-top: 7%;
+
+    @media only screen and (max-width: 480px){
+        padding: 20px;
+    }
 `
 
 const Title = styled.h1`

@@ -24,6 +24,10 @@ const Menu = styled.ul`
     list-style: none;
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: 480px){
+        display: none;
+    }
 `
 
 const MenuItem = styled.li`

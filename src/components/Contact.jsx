@@ -16,20 +16,39 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 480px){
+        flex-direction: column;
+        padding: 5px;
+        align-items: normal;
+    }
 `
 const FormContainer = styled.div`
     width: 50%;
+
+    @media only screen and (max-width: 480px){
+        width: 100%;
+    }
 `
 const Title = styled.h1`
    margin:50px;
    margin-top: 0;
    margin-left: 120px;
+
+   @media only screen and (max-width: 480px){
+        margin: 0 0 50px 120px;
+    }
 `
 const Form = styled.form`
     height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media only screen and (max-width: 480px){
+       flex-direction: column;
+       width: 100%;
+    }
 `
 
 const LeftForm =styled.div`
@@ -51,6 +70,10 @@ const Input = styled.input`
     margin-right: 20px;
     border-radius: 10px;
     border:1px solid #9f9e9e;
+
+    @media only screen and (max-width: 480px){
+        margin-bottom: 10px;
+    }
 `
 const TextArea = styled.textarea`
     width: 200px;
@@ -58,6 +81,12 @@ const TextArea = styled.textarea`
     padding: 20px;
     border-radius: 10px;
     border:1px solid #9f9e9e;
+
+    @media only screen and (max-width: 480px){
+        margin-bottom: 10px;
+        padding: 10px;
+
+    }
 `
 const Button = styled.button`
     padding: 15px;
@@ -74,19 +103,38 @@ const AddressContainer =styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media only screen and (max-width: 480px){
+        width:100%;
+        margin-top: 50px;
+    }
 `
 const Address = styled.div`
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+
+    @media only screen and (max-width: 480px){
+        margin-bottom: 10px;
+    }
 `
 const Image = styled.img`
     width:20px;
     margin-right: 50px;
+
+    @media only screen and (max-width: 480px){
+        width: 10px;
+        margin-right: 10px;
+    }
 `
 const Text = styled.span`
     font-size: 20px;
     margin-right: 15px;
+
+    @media only screen and (max-width: 480px){
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
 `
 const Contact = () => {
   return (
