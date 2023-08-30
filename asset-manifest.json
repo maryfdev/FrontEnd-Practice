@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/FrontEnd-Practice/static/js/main.ef6b8de3.js",
+    "static/media/Girl.png": "/FrontEnd-Practice/static/media/Girl.fd6a4a716f2150f40e84.png",
+    "static/media/Pretty-Woman.png": "/FrontEnd-Practice/static/media/Pretty-Woman.62af4435a039fbcab991.png",
+    "static/media/Papp.png": "/FrontEnd-Practice/static/media/Papp.93e5545fc6c9951ae87c.png",
+    "index.html": "/FrontEnd-Practice/index.html",
+    "main.ef6b8de3.js.map": "/FrontEnd-Practice/static/js/main.ef6b8de3.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ef6b8de3.js"
+  ]
+}
